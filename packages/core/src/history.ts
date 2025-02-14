@@ -110,7 +110,7 @@ class History {
             page: window.history.state.page,
             scrollRegions,
           },
-          this.current.url!,
+          location.href,
         )
       })
     })
@@ -124,7 +124,7 @@ class History {
             page: window.history.state.page,
             documentScrollPosition: scrollRegion,
           },
-          this.current.url!,
+          location.href,
         )
       })
     })

@@ -45,7 +45,7 @@
     "dev": "./build.js --watch",
     "build": "npm run clean && ./build.js && tsc --emitDeclarationOnly --skipLibCheck",
     "clean": "rm -rf types && rm -rf dist",
-    "prepublishOnly": "npm run build"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@playwright/test": "^1.46.1",
